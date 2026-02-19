@@ -485,13 +485,17 @@
 
     .about { 
       padding: 1rem 6% 8rem; 
-      display: grid; 
-      grid-template-columns: 1fr 1fr; 
-      gap: 5rem; 
-      align-items: center; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-    @media (max-width: 780px) { 
-      .about { grid-template-columns: 1fr; gap: 3rem; } 
+    .about > div {
+      max-width: 700px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     
     .why-choose {
@@ -500,7 +504,7 @@
     }
     .why-choose .section-header {
       text-align: center;
-      margin-bottom: 4rem;
+      margin: 0 auto 4rem;
     }
     .avatar { 
       width: 120px; 
@@ -1160,10 +1164,13 @@
     24040 Ciserano (BG)
   </div>
   <div class="f-contact">
-    <span style="color: var(--primary-light);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="93fafdf5fcd3f7f2fdfaf6ffe0e3fce1e7f6fffffabdfae7">[email&#160;protected]</a></span>
+    <span style="color: var(--primary-light);">info@danielsportelli.it</span>
   </div>
   <p class="f-disclaimer">
     Questo sito non fa parte dei siti web di Facebook, Meta Inc., Google LLC o TikTok.<br>
     Inoltre, questo sito NON &egrave; approvato da Facebook, Google o TikTok in alcun modo.<br>
     Facebook &egrave; un marchio registrato di Meta Inc. Google &egrave; un marchio registrato di Google LLC.<br>
-    TikTok &egrave; un marchio registrato di ByteDa
+    TikTok &egrave; un marchio registrato di ByteDance Ltd.
+  </p>
+  <p class="f-copy">&copy; 2025 Daniel Sportelli. Tutti i diritti riservati.</p>
+</footer>
